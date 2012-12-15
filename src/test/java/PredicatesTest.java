@@ -1,13 +1,13 @@
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Lists;
+import org.fest.util.Strings;
 import org.junit.Test;
 
 import java.util.Collection;
 import java.util.List;
 
 import static com.google.common.base.Predicates.and;
-import static org.apache.commons.lang3.StringUtils.isEmpty;
 import static org.apache.commons.lang3.StringUtils.trim;
 import static org.fest.assertions.Assertions.assertThat;
 
@@ -20,8 +20,8 @@ public class PredicatesTest {
     private static Predicate<Car> carIsRedPredicate = new Predicate<Car>() {
         @Override
         public boolean apply(Car car) {
-            if (car == null || isEmpty(car.getColor())) return false;
-            return trim(car.getColor()).equalsIgnoreCase("red");
+            if (car == null || Strings.isEmpty(car.getColor())) return false;
+            return   trim(car.getColor()).equalsIgnoreCase("red");
         }
     };
 
