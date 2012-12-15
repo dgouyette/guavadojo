@@ -45,7 +45,6 @@ public class PredicatesTest {
     public void should_filter_blue_cars() {
 
         Collection<Car> redCars = Collections2.filter(cars, carIsRedPredicate);
-
         assertThat(redCars).hasSize(1);
         assertThat(redCars.iterator().next().getColor()).isEqualToIgnoringCase("red");
     }
