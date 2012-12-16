@@ -1,8 +1,11 @@
+package guavadojo;
 import com.google.common.base.Function;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Lists;
 import org.junit.Before;
 import org.junit.Test;
+
+import guavadojo.Account;
 
 import java.util.List;
 

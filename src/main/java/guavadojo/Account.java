@@ -1,3 +1,4 @@
+package guavadojo;
 import java.io.Serializable;
 
 public class Account implements Serializable {

@@ -1,3 +1,4 @@
+package guavadojo;
 import com.google.common.collect.Range;
 import com.google.common.collect.Ranges;
 import org.junit.Test;

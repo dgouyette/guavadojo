@@ -1,8 +1,11 @@
+package guavadojo;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Lists;
 import org.fest.util.Strings;
 import org.junit.Test;
+
+import guavadojo.Car;
 
 import java.util.Collection;
 import java.util.List;
