@@ -1,22 +1,15 @@
 package guavadojo;
-import com.google.common.base.Preconditions;
-import com.google.common.base.Strings;
+
 import org.junit.Test;
 
+import com.google.common.base.Preconditions;
+
 public class PreconditionTest {
-
-
-    public void notEmptyParamMethod(String param1) {
-        Preconditions.checkArgument(Strings.isNullOrEmpty(param1), "param1 is empty");
-    }
-
-
-    @Test(expected = IllegalArgumentException.class)
-    public void should_throw_illegalArgumentException_when_param1_empty(){
-        notEmptyParamMethod("");
-    }
-
-
-
-
+  
+  @Test(expected = IllegalArgumentException.class)
+  public void should_throw_illegalArgumentException_when_param1_is_not_valid() {
+    int param = 1;
+    Preconditions.checkArgument(param == 2, "param1 should be equal to 2");
+  }
+  
 }
