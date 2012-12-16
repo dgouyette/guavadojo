@@ -11,7 +11,7 @@ import com.google.common.base.Function;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Lists;
 
-public class Collection2Test {
+public class Collections2Test {
   
   private List<Account> accounts = Lists.newArrayList();
   
