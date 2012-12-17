@@ -28,4 +28,14 @@ public class OptionalTest {
     assertThat(stringToInt("123").get()).isEqualTo(123);
   }
   
+  @Test
+  public void cumbersome_optional() throws Exception {
+    // Car car = new Car("foo", "blue", false);
+    // saveCar(car)
+    // Optional<Car> optionalCar = findCarById(id)
+    // Car car = findCarById(id).get() // Cumbersome to call .get()
+    // prefer better names like :
+    // - getById() returns an Optional<Car>
+    // - loadById() returns directly the Car or throws an CarNotFoundException(id)
+  }
 }
