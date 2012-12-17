@@ -1,16 +1,14 @@
 package guavadojo;
 
-import com.google.common.base.Joiner;
-import com.google.common.base.Splitter;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import org.junit.Test;
-
-import java.util.Iterator;
-import java.util.List;
-
 import static com.google.common.collect.Lists.newArrayList;
 import static org.fest.assertions.Assertions.assertThat;
+
+import java.util.List;
+
+import org.junit.Test;
+
+import com.google.common.base.Joiner;
+import com.google.common.base.Splitter;
 
 public class JoinerSplitterTest {
   
