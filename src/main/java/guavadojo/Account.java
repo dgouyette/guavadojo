@@ -1,7 +1,8 @@
 package guavadojo;
 
+import com.google.common.base.Objects;
+
 import java.io.Serializable;
-import java.util.Objects;
 
 public class Account implements Serializable {
   
@@ -32,7 +33,7 @@ public class Account implements Serializable {
     // result = prime * result + ((name == null) ? 0 : name.hashCode());
     // return result;
     
-    return Objects.hash(name, balance);
+    return Objects.hashCode(name, balance);
   }
   
   @Override
@@ -40,7 +41,7 @@ public class Account implements Serializable {
     if (this == obj) return true;
     if (obj instanceof Account) {
       Account other = (Account) obj;
-      return Objects.equals(this.getName(), other.getName()) && Objects.equals(this.getBalance(), other.getBalance());
+      return Objects.equal(this.getName(), other.getName()) && Objects.equal(this.getBalance(), other.getBalance());
     }
     return false;
   }

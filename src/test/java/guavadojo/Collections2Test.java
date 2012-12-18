@@ -19,7 +19,7 @@ public class Collections2Test {
   public void setup() {
     accounts.add(new Account("bob", -2000));
     accounts.add(new Account("john", 565));
-    accounts.add(new Account("Bill", 1_000_000));
+    accounts.add(new Account("Bill", 1000000));
   }
   
   private Function<Account,Account> multiplyBy2Function = new Function<Account,Account>() {
@@ -34,7 +34,7 @@ public class Collections2Test {
     List<Account> multipliedAccounts = Lists.newArrayList(Collections2.transform(accounts, multiplyBy2Function));
     assertThat(multipliedAccounts.get(0).getBalance()).isEqualTo(-4000);
     assertThat(multipliedAccounts.get(1).getBalance()).isEqualTo(1130);
-    assertThat(multipliedAccounts.get(2).getBalance()).isEqualTo(2_000_000);
+    assertThat(multipliedAccounts.get(2).getBalance()).isEqualTo(2000000);
   }
   
 }
